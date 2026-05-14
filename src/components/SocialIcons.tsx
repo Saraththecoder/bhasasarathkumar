@@ -1,9 +1,7 @@
 import {
   FaGithub,
-  FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa6";
-import { SiCredly } from "react-icons/si";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
@@ -61,7 +59,7 @@ const SocialIcons = () => {
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
           <a
-            href="https://github.com/PrashantxMentAI"
+            href="https://github.com/sarathkumarbhasa"
             target="_blank"
             rel="noreferrer"
           >
@@ -70,35 +68,17 @@ const SocialIcons = () => {
         </span>
         <span>
           <a
-            href="https://www.linkedin.com/in/prashant-484458363"
+            href="http://www.linkedin.com/in/sarathakumarm3001"
             target="_blank"
             rel="noreferrer"
           >
             <FaLinkedinIn />
           </a>
         </span>
-        <span>
-          <a
-            href="https://www.credly.com/users/prashant.d2ee4231"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <SiCredly />
-          </a>
-        </span>
-        <span>
-          <a
-            href="https://www.instagram.com/_.prashant_ll/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaInstagram />
-          </a>
-        </span>
       </div>
       <a
         className="resume-button"
-        href="/Prashant_Resume.pdf"
+        href="/Resume.pdf"
         target="_blank"
         rel="noreferrer"
       >

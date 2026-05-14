@@ -12,13 +12,13 @@ const About = () => {
           <div className="about-content">
             <h2 className="title"> About me </h2>
             <p className="para">
-              Second-year Robotics & AI student (SGPA: 8.73) with hands-on experience in Firebase, GCP, and open-source development. Proficient in Python and focused on building real-world AI solutions, with exposure to cloud infrastructure and robotics frameworks like ROS (Robot Operating System).
+              Second-year Artificial Intelligence & Machine Learning student (CGPA: 9.03) with experience in frontend development, AI-powered web applications, and open-source development. Proficient in React, TypeScript, Python, Firebase, and FastAPI, focused on building responsive and real-world intelligent systems.
             </p>
           </div>
           <div className="card-footer">
             <div className="card-stat">
-              <span className="stat-value">8.73</span>
-              <span className="stat-label">SGPA</span>
+              <span className="stat-value">9.03</span>
+              <span className="stat-label">CGPA</span>
             </div>
             <div className="card-stat">
               <span className="stat-value">2ND</span>

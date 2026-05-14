@@ -14,15 +14,12 @@ import {
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
   "/images/python.png",
-  "/images/java.png",
-  "/images/c.png",
+  "/images/javascript.webp",
+  "/images/react.webp",
   "/images/typescript.webp",
   "/images/gemini.png",
-  "/images/ros.png",
-  "/images/gcp.png",
+  "/images/mongo.webp",
   "/images/firebase.png",
-  "/images/aws.png",
-  "/images/azure.png",
   "/images/next.webp",
   "/images/github.png",
 ];

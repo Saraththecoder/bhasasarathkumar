@@ -70,8 +70,8 @@ const WhatIDo = () => {
               <span className="what-card-label">Specialization 01</span>
             </div>
             <div className="what-content-in">
-              <h3 className="title">AI &amp; ROBOTICS</h3>
-              <h4>Intelligent Solutions &amp; Chatbots</h4>
+              <h3 className="title">AI &amp; ML</h3>
+              <h4>Intelligent Systems &amp; Applications</h4>
               <p className="para">
                 Focused on building real-world AI solutions, including AI Chatbot Development, Prompt Engineering, and Generative AI using Gemini APIs.
               </p>
@@ -80,8 +80,10 @@ const WhatIDo = () => {
                 <div className="what-content-flex">
                   <div className="what-tags">Python</div>
                   <div className="what-tags">Generative AI</div>
-                  <div className="what-tags">Prompt Engineering</div>
-                  <div className="what-tags">ROS (Robot Operating System)</div>
+                  <div className="what-tags">FastAPI</div>
+                  <div className="what-tags">MongoDB</div>
+                  <div className="what-tags">OpenCV</div>
+                  <div className="what-tags">NetworkX</div>
                 </div>
               </div>
               <div className="what-arrow"></div>
@@ -96,21 +98,21 @@ const WhatIDo = () => {
               <span className="what-card-label">Specialization 02</span>
             </div>
             <div className="what-content-in">
-              <h3 className="title">OPEN-SOURCE &amp; INNOVATION</h3>
-              <h4>Collaborative Tech &amp; Leadership</h4>
+              <h3 className="title">FRONTEND &amp; OPEN-SOURCE</h3>
+              <h4>Modern Web &amp; Collaborative Tech</h4>
               <p className="para">
-                Building AI-powered applications, exploring modern technologies, and contributing to collaborative open-source projects while driving creative ideas through tech communities and leadership initiatives.
+                Building responsive web applications, exploring modern technologies, and contributing to collaborative open-source projects while driving creative ideas through tech communities.
               </p>
               <div className="what-details">
                 <h5>Skillset &amp; tools</h5>
                 <div className="what-content-flex">
-                  <div className="what-tags">Python</div>
+                  <div className="what-tags">React</div>
+                  <div className="what-tags">Next.js</div>
+                  <div className="what-tags">Tailwind CSS</div>
                   <div className="what-tags">Firebase</div>
                   <div className="what-tags">Git/GitHub</div>
-                  <div className="what-tags">Gemini AI</div>
-                  <div className="what-tags">Cloud</div>
                   <div className="what-tags">UI/UX</div>
-                  <div className="what-tags">Public Speaking</div>
+                  <div className="what-tags">Figma</div>
                 </div>
               </div>
               <div className="what-arrow"></div>

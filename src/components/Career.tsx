@@ -1,64 +1,69 @@
 import { LuBriefcase } from "react-icons/lu";
 import { HiSparkles, HiCodeBracket } from "react-icons/hi2";
 import { MdRocketLaunch, MdCloud } from "react-icons/md";
-import { FaXmark } from "react-icons/fa6";
+import { FaUsers } from "react-icons/fa6";
 import "./styles/Career.css";
 
 const experiences = [
   {
     id: 0,
-    title: "TEDx Organizer",
-    role: "TEDxCGC Mohali 2026",
-    subtitle: "TEDx Event",
-    date: "June 2026",
-    duration: "Present",
-    description: "Leading the planning and execution of TEDx events, managing speaker curation, logistics, and community engagement to spread innovative ideas.",
-    icon: <FaXmark />,
-    color: "#eb0028" // TED Red
+    title: "Women Ideathon 1.0 Finalist",
+    role: "CBIT Hyderabad",
+    subtitle: "Hackathon Finalist",
+    date: "Mar 2026",
+    duration: "Finalist",
+    description:
+      "Built Sakhi, a WhatsApp-based healthcare companion designed to make women’s healthcare more accessible and conversational. Presented the final solution after completing a structured mentorship phase.",
+    icon: <FaUsers />,
+    color: "#ec4899"
   },
   {
     id: 1,
-    title: "Campus Ambassador & Open Source Contributor",
-    role: "GSSoC 2026",
-    subtitle: "GSSoC 2026",
-    date: "Apr 2026",
-    duration: "Present",
-    description: "Contributing to open-source projects under GirlScript Summer of Code, collaborating with developers and leading campus initiatives.",
-    icon: <HiCodeBracket />,
-    color: "#22d3ee" // Cyan
+    title: "Anantapur Police AI Hackathon",
+    role: "Hackathon Finalist",
+    subtitle: "FraudShield",
+    date: "Mar 2026",
+    duration: "Finalist",
+    description:
+      "Designed and developed FraudShield, a fraud detection platform using FastAPI, MongoDB, React, and NetworkX with multi-layer fraud detection and graph-based relationship traversal.",
+    icon: <MdRocketLaunch />,
+    color: "#f43f5e"
   },
   {
     id: 2,
-    title: "Google Gemini",
-    role: "Student Ambassador",
-    subtitle: "GSA 2026",
-    date: "Mar 2026",
+    title: "Open Source Contributor",
+    role: "GirlScript Summer of Code",
+    subtitle: "GSSoC 2026",
+    date: "Apr 2026",
     duration: "Present",
-    description: "Serving as a Student Ambassador, representing Google Gemini on campus and evangelizing generative AI technologies.",
-    icon: <HiSparkles />,
-    color: "#a855f7" // Purple
+    description:
+      "Contributing to open-source projects, collaborating with developers, and improving technical and problem-solving skills through real-world development workflows.",
+    icon: <HiCodeBracket />,
+    color: "#22d3ee"
   },
   {
     id: 3,
-    title: "Google Innovation TechSprint 2025",
-    role: "Google Developers Group",
-    subtitle: "GDG TechSprint",
-    date: "Dec 2025",
-    duration: "Feb 2026",
-    description: "Participated in the GDG TechSprint, building innovative solutions and solving complex technical challenges.",
-    icon: <MdRocketLaunch />,
-    color: "#f43f5e" // Rose
+    title: "Google Student Ambassador",
+    role: "Google Student Ambassadors India",
+    subtitle: "GSA 2026",
+    date: "May 2026",
+    duration: "Present",
+    description:
+      "Representing student developer communities, promoting technology initiatives, and engaging in AI and development-focused collaborative activities.",
+    icon: <HiSparkles />,
+    color: "#a855f7"
   },
   {
     id: 4,
-    title: "Google Cloud Study Jams Achiever",
-    role: "Google Cloud Skills Boost",
-    subtitle: "Tier 3 Achiever",
-    date: "Sep 2025",
-    duration: "Nov 2025",
-    description: "Completed the Tier 3 achievements in Google Cloud Study Jams, demonstrating proficiency in cloud infrastructure and GCP tools.",
+    title: "Google Cloud Certification",
+    role: "Google Cloud",
+    subtitle: "Generative AI Studio",
+    date: "2025",
+    duration: "Certified",
+    description:
+      "Completed Google Cloud certification focused on Generative AI Studio and foundational cloud-based AI workflows using GCP tools and services.",
     icon: <MdCloud />,
-    color: "#3b82f6" // Blue
+    color: "#3b82f6"
   }
 ];
 
