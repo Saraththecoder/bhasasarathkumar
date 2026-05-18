@@ -42,8 +42,8 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          SB
+        <a href="/#" className="navbar-logo" data-cursor="disable">
+          <img src="/images/logo.jpeg" alt="LeadBrick Logo" />
         </a>
         <a
           href="http://www.linkedin.com/in/sarathakumarm3001"

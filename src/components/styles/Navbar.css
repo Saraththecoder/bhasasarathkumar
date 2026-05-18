@@ -40,10 +40,14 @@
   letter-spacing: 1px;
   font-weight: 500;
 }
-.navbar-title {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.2px;
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+.navbar-logo img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
 }
 @media only screen and (min-width: 500px) {
   .header {
@@ -57,8 +61,8 @@
   .header ul li {
     color: #eae5ec;
   }
-  .navbar-title {
-    font-size: 16px;
+  .navbar-logo img {
+    height: 35px;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -77,7 +81,7 @@
   .navbar-connect {
     font-size: 16px;
   }
-  .navbar-title {
-    font-size: 18px;
+  .navbar-logo img {
+    height: 40px;
   }
 }
