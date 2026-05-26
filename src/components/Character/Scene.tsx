@@ -27,24 +27,60 @@ function GsapIntegration({ character }: { character: THREE.Object3D | null }) {
 const Scene = () => {
   const hoverDivRef = useRef<HTMLDivElement>(null);
   const [character, setCharacter] = useState<THREE.Object3D | null>(null);
+  const [isVisible, setIsVisible] = useState(true);
 
   useLoading();
 
   useEffect(() => {
-    // Legacy support for landing touch events if needed
-    const landingDiv = document.getElementById("landingDiv");
-    if (landingDiv) {
-      // we can handle touch starts here if needed
-    }
+    const landing = document.getElementById("landingDiv");
+    const about = document.querySelector(".about-section");
+    const whatIdo = document.querySelector(".whatIDO");
+
+    const visibilityMap = new Map<Element, boolean>();
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          visibilityMap.set(entry.target, entry.isIntersecting);
+        });
+        const isAnyVisible = Array.from(visibilityMap.values()).some((v) => v);
+        setIsVisible(isAnyVisible);
+      },
+      {
+        rootMargin: "300px", // High buffer to load character smoothly before scrolling in
+        threshold: 0.01,
+      }
+    );
+
+    if (landing) observer.observe(landing);
+    if (about) observer.observe(about);
+    if (whatIdo) observer.observe(whatIdo);
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
     <>
-      <div className="character-container" style={{ position: "fixed", top: 0, left: 0, width: "100vw", height: "100vh", zIndex: 10, pointerEvents: "none" }}>
+      <div 
+        className="character-container" 
+        style={{ 
+          position: "fixed", 
+          top: 0, 
+          left: 0, 
+          width: "100vw", 
+          height: "100vh", 
+          zIndex: 10, 
+          pointerEvents: "none",
+          display: isVisible ? "block" : "none"
+        }}
+      >
         <div className="character-model" style={{ width: "100%", height: "100%", pointerEvents: "none" }}>
           <div className="character-rim"></div>
           <div className="character-hover" ref={hoverDivRef} style={{ pointerEvents: "auto" }}></div>
           <Canvas
+            frameloop={isVisible ? "always" : "never"}
             gl={{ 
               antialias: true, 
               alpha: true, 
@@ -53,7 +89,7 @@ const Scene = () => {
               stencil: false,
               powerPreference: "high-performance"
             }}
-            dpr={[1, 2]}
+            dpr={[1, 1.5]}
           >
             <PerspectiveCamera makeDefault position={[0, 13.1, 24.7]} fov={14.5} zoom={1.1} />
             <ambientLight intensity={0.5} />

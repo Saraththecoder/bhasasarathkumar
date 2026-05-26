@@ -16,7 +16,7 @@ const Contact = () => {
                 rel="noreferrer"
                 data-cursor="disable"
               >
-                LinkedIn — Sarath Kumar
+                LinkedIn — Bhasa Sarath Kumar
               </a>
             </p>
             <h4>Education</h4>
@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Sarath</span>
+              Designed and Developed <br /> by <span>Bhasa Sarath Kumar</span>
             </h2>
             <h5>
               <MdCopyright /> 2026
